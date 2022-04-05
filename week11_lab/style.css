@@ -24,6 +24,10 @@ header {
 /* TODO: Add styles here to gradually fade out the notice */
 /* HINT: You'll need to use the opacity property */
 #notice.dismissed {
+  transition-duration: 500ms;
+  transition-property: opacity;
+  transition-timing-function: ease-in;
+  opacity: 0%;
 }
 
 #case-date-update {
@@ -36,6 +40,10 @@ header {
   fill: rgb(56, 178, 172);
   border-radius: 50%;
   cursor: pointer;
+  transition-property: background, fill;
+  transition-duration: 750ms;
+  transition-timing-function: linear;
+  transition-timing-function: ease;
 }
 
 #dismiss-notice:hover {
